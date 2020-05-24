@@ -35,7 +35,7 @@
                                             // Python: <BHHf
 
 // Switch on/off debugging via Serial.
-#define DEBUG_PRINT
+#undef DEBUG_PRINT
 
 #include "debug.h"
 #ifdef DEBUG_PRINT

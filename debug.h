@@ -26,7 +26,8 @@
                                   debug_print(':'); \
                                   debug_print(second(t) < 10 ? "0" : ""); \
                                   debug_print(second(t))
-#define debug_datetime(t)         debug_date(t); debug_print(' '); debug_time(t)                             
+#define debug_datetime(t)         debug_date(t); debug_print(' '); debug_time(t)      
+#define debug_delay(ms)           delay(ms)                       
 #endif
 #else
 #define debug_begin_nrf24()
@@ -37,4 +38,5 @@
 #define debug_date(t)
 #define debug_time(t)
 #define debug_datetime(t)
+#define debug_delay(ms)
 #endif
